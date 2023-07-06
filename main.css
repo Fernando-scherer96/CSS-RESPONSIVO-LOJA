@@ -150,8 +150,16 @@ footer li img {
         grid-template-columns: repeat(2, 49%);
     }
 
+    .lista-produtos li {
+        max-width: 100%;
+    }
+
     .lista-produtos li img {
         width: 100%;
+    }
+
+    .item-central {
+        margin: 0;
     }
 
     footer li {
