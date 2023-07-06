@@ -1,14 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
     font-size: 16px;
     color: #333;
-  }
+}
 
 .container {
     max-width: 1024px;
@@ -16,29 +16,31 @@ body {
     margin: 0 auto;
 }
 
-header, footer {
+header,
+footer {
     background-color: rgba(255, 0, 0, 0.74);
     padding-top: 32px;
     color: #fff;
 }
 
-header > .container, 
+header > .container,
 footer > .container {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
 }
 
-.Sobre ul {
+.sobre ul {
     display: flex;
     list-style: none;
 }
 
-.Sobre ul li {
+.sobre ul li {
     margin-right: 16px;
 }
 
-.Sobre ul li a {
+.sobre ul li a {
     color: #fff;
     text-decoration: none;
 }
@@ -56,7 +58,7 @@ section {
     padding: 48px 0;
 }
 
-section h2{
+section h2 {
     margin-bottom: 16px;
 }
 
@@ -87,7 +89,7 @@ section h2{
 button {
     display: block;
     width: 100%;
-    padding: 8 0;
+    padding: 8px 0;
     border: none;
     background-color: rgba(255, 0, 0, 0.74);
     color: #fff;
@@ -108,32 +110,32 @@ footer li img {
 }
 
 @media screen and (min-width: 1024px) {
-     body {
+    body {
         font-size: 18px;
         color: #555;
-     }
+    }
 }
 
 @media (max-width: 1023px) and (min-width: 767px) {
-    
-    header > .container, 
-    footer > .container{
-    flex-direction: column;
-    text-align: center;
+    header > .container,
+    footer > .container {
+        flex-direction: column;
+        text-align: center;
     }
-    
+
     .container {
         max-width: 95%;
     }
-    
-    body { 
+
+    body {
         font-size: 18px;
         color: #777;
     }
-    .Sobre ul {
+
+    .sobre ul {
         display: block;
     }
-     
+
     .container-flex {
         display: block;
     }
@@ -164,11 +166,10 @@ footer li img {
 }
 
 @media screen and (max-width: 767px) {
-
-    header > .container, 
+    header > .container,
     footer > .container {
-    flex-direction: column;
-    text-align: center;
+        flex-direction: column;
+        text-align: center;
     }
 
     .container {
@@ -181,17 +182,17 @@ footer li img {
 
     body {
         font-size: 16px;
-        color:#999;
+        color: #999;
     }
 
-    .Sobre ul {
+    .sobre ul {
         display: block;
     }
-     
+
     .container-flex {
         display: block;
     }
-    
+
     #sobre-a-loja img {
         max-width: 100%;
         margin-right: 0%;
@@ -202,20 +203,20 @@ footer li img {
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    
+
     .lista-produtos li {
         list-style: block;
         max-width: 100%;
         text-align: left;
     }
-    
+
     .lista-produtos li h3 {
         margin: 0;
     }
-    
+
     .lista-produtos li img {
         max-width: 100%;
-    }  
+    }
 
     .item-central {
         margin: 0 auto;
@@ -230,5 +231,4 @@ footer li img {
     footer li img {
         height: 32px;
     }
-    
 }
